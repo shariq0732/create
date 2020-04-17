@@ -9,6 +9,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./ag-grid.component.scss']
 })
 export class AgGridComponent implements OnInit {
+
+
+  style1 = {
+    marginLeft: '55px',
+    marginTop : '130px',
+    width: '96%',
+    height: '82%',
+    boxSizing: 'border-box',
+    display:'inline-block'
+  };
+
   private gridApi : any;
   private gridColumnApi : any;
   private columnDefs : any;
@@ -84,6 +95,7 @@ export class AgGridComponent implements OnInit {
     ];
 
     this.defaultColDef = {
+      flex : 1
     }
 
     this.frameworkComponents = {

@@ -5,7 +5,7 @@
     /* padding: 12px 15px; */
     /* //background-color: coral; */
     margin: 0 auto;
-    width: 67%;
+    width: 100%;
 }
 
 
@@ -29,7 +29,8 @@ h6{
 }
 
 .color{
+    margin-top: 100px;
     height: 100%;
     width: 100%;
-    background-color: chocolate;
+    /* //background-color: chocolate; */
 }

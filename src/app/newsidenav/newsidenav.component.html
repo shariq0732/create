@@ -12,11 +12,11 @@
       </div>
 
       <mat-nav-list [ngStyle]="style2">
-        <mat-list-item>
-          <mat-icon mat-list-icon>home</mat-icon>
+        <mat-list-item (click) = "backToHome()">
+          <mat-icon mat-list-icon >home</mat-icon>
           <h4 mat-line *ngIf="isExpanded">Home</h4>
         </mat-list-item>
-        <mat-list-item>
+        <mat-list-item (click) = "newEntry()">
           <mat-icon mat-list-icon>add</mat-icon>
           <h4 mat-line *ngIf="isExpanded">New Entry</h4>
         </mat-list-item>
@@ -33,16 +33,15 @@
     </mat-sidenav>
   
     <mat-sidenav-content [ngStyle]="{ 'margin-left.px': contentMargin }" >
-      <div class = "fixed-header">
-        <img class="logo" src="assets/img/Bosch_EN_LV_RGB.png">
+      <header>
+        <img  [ngStyle]  = "logo" src="assets/img/Bosch_EN_LV_RGB.png">
         <div class = "define"><h4 class = "h4color">One Step</h4></div>
-      </div>
-      <!-- <mat-selection-list class="dash-list">
-        <h3>TO DO</h3>
-        <mat-list-option *ngFor="let todo of task">
-          {{todo}}
-        </mat-list-option>
-      </mat-selection-list>  -->
+        <hr>
+      </header>
+     <!-- <section id = "headerContent1">
+      <router-outlet></router-outlet>
+     </section> -->
+     <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
-  <router-outlet></router-outlet>
+ 

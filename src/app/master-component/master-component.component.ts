@@ -16,10 +16,11 @@ export class MasterComponentComponent implements OnInit {
 
   // grid1 variable
   style1 = {
-    marginLeft: '50px',
-    marginTop : '30px',
-    width: '95%',
-    height: '95%',
+    marginLeft: '60px',
+    marginTop : '130px',
+    marginRight: '0px',
+    width: '97%',
+    height: '82%',
     boxSizing: 'border-box',
     display:'inline-block'
   };
@@ -47,9 +48,9 @@ export class MasterComponentComponent implements OnInit {
   style2 = {
     float: 'right',
     marginLeft: '0px',
-    marginTop : '30px',
-    width: '59%',
-    height: '96%',
+    marginTop : '130px',
+    width: '61%',
+    height: '82%',
     boxSizing: 'border-box',
     display:'inline-block'
   };
@@ -281,7 +282,7 @@ export class MasterComponentComponent implements OnInit {
     subscribe((data)=>{
       console.log(data);
     })
-    this.setWidthAndHeight('35%', '60%');
+    this.setWidthAndHeight('34%', '82%');
     this.ser.setData(value);
     this.myVar = true;
     this.ser.getCatagoryByTopic("pending")
@@ -320,7 +321,8 @@ export class MasterComponentComponent implements OnInit {
     this.style1 = { 
       
         marginLeft: '30px',
-        marginTop : '155px',
+        marginTop : '130px',
+        marginRight: '0px',
         width: width,
         height: height,
         boxSizing:'border-box',

@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { MatTabsModule , MatSidenavModule , MatToolbarModule, MatButtonModule, MatIconModule, MatDialogModule, MatCardModule, MatListModule  } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatMenuModule} from '@angular/material/menu'
-import { SidenavComponent } from './sidenav/sidenav.component';
 import { DatapopupComponent } from './datapopup/datapopup.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RbUiComponentsModule } from '@inst-iot/bosch-angular-ui-components';
@@ -15,8 +14,6 @@ import { FooterComponent } from './footer/footer.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { AgGridComponent } from './ag-grid/ag-grid.component';
 import { RouterModule } from '@angular/router';
-import { UpdateComponent } from './update/update.component';
-import { DeleteComponent } from './delete/delete.component';
 import { ReadComponent } from './read/read.component';
 import { NewentryComponent } from './newentry/newentry.component';
 import { InformationscreenComponent, SafeHtmlPipe } from './informationscreen/informationscreen.component';
@@ -29,18 +26,17 @@ import { RichtexteditorComponent } from './richtexteditor/richtexteditor.compone
 import {MatSelectModule} from '@angular/material/select';
 import { LayoutModule } from '@angular/cdk/layout';
 import { NewsidenavComponent } from './newsidenav/newsidenav.component';
+import { SerachbaarComponent } from './serachbaar/serachbaar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidenavComponent,
+    //SidenavComponent,
     DatapopupComponent,
     HeaderComponent,
     FooterComponent,
     AgGridComponent,
-    UpdateComponent,
-    DeleteComponent,
     ReadComponent,
     NewentryComponent,
     InformationscreenComponent,
@@ -51,6 +47,7 @@ import { NewsidenavComponent } from './newsidenav/newsidenav.component';
     RichtexteditorComponent,
     SafeHtmlPipe,
     NewsidenavComponent,
+    SerachbaarComponent,
   ],
   imports: [
     BrowserModule,
