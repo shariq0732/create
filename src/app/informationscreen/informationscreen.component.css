@@ -1,0 +1,35 @@
+
+
+
+.edit1{
+    /* padding: 12px 15px; */
+    /* //background-color: coral; */
+    margin: 0 auto;
+    width: 67%;
+}
+
+
+
+.header{
+    padding: 12px 15px;
+    background: #555;
+    color: #f1f1f1;
+
+    /* //position: fixed; */
+    width: 100%;
+
+}
+h2{
+    text-align: center;
+    margin: 0px;
+}
+h6{
+    text-align: center;
+    margin-left: 400px;
+}
+
+.color{
+    height: 100%;
+    width: 100%;
+    background-color: chocolate;
+}

@@ -1,0 +1,30 @@
+<script src="img-resize.js"></script>
+<mat-card-header>
+    <mat-toolbar class="toolbar">
+      <mat-card-title>{{Editor}}</mat-card-title>
+      <span class="toolbar-spacer"></span>
+      <mat-icon (click)="onNoClick()">cancel</mat-icon>
+    </mat-toolbar>
+  </mat-card-header>
+  <mat-card-content>
+   
+        <form [formGroup]="richText" (submit)="onSubmit()">
+            <div class="form-group">     
+                <quill-editor [styles] = "editorStyle"  [modules] = "config"  placeholder="Enter your work here!!"  (onContentChanged) = "maxLength($event)" formControlName = "editor"  [preserveWhitespace]="true" ></quill-editor>
+            </div>
+            <button class = "btn btn-primary ">Submit</button>
+        </form>
+        <form>
+            <mat-form-field>
+              <mat-label>Reviewer</mat-label>
+              <mat-select [(ngModel)]="selectedValue" name="reviewer" placeholder= "mode">
+                <mat-option *ngFor="let reviewer of Reviewers" [value]="reviewer.id">
+                  {{reviewer.name}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+            
+        </form>
+  
+    
+</mat-card-content>

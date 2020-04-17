@@ -1,0 +1,21 @@
+<div [ngStyle]="style">
+
+    <ag-grid-angular
+      #agGrid
+      style="width: 95%; height: calc(100% - 25px);"
+      id="myGrid"
+      class="ag-theme-alpine"
+      [editType]="editType"
+      [gridOptions]="gridOptions"
+      [columnDefs]="columnDefs"
+      [rowData]="rowData"
+      [deltaRowDataMode]="true"
+      [getRowNodeId]="getRowNodeId"
+      [frameworkComponents]="frameworkComponents"
+      [defaultColDef]="defaultColDef"
+      [rowSelection]="rowSelection"
+      [animateRows]="true"
+      (gridReady)="onGridReady($event)"
+    ></ag-grid-angular>
+  
+</div>

@@ -1,0 +1,102 @@
+
+.fixed{
+    
+    cursor: pointer;
+    margin-left: 35px;
+}
+
+.fixeds{
+   
+    float: right;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.mat-icon {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.imgbox {
+    display: grid;
+}
+
+.center-fit {
+    max-width: 100%;
+    margin: auto;
+}
+
+.logo {
+    margin-left: 60px;
+    margin-top: 3px;
+    padding: 2px;
+    width: 160px;
+    display: inline-block;
+  }
+  .define{
+    display: inline-block;
+    float: right;
+    margin-right: 300px;
+    margin-top: 20px;
+}
+
+h4{
+    color: white;
+    cursor: pointer;
+}
+
+.h4color{
+    color: black;
+}
+
+.fixed-header{
+    position: fixed;
+    width: 100%;
+}
+
+
+
+
+
+
+#sidenav{
+    width: 240px;
+    background-color: #353b48;
+}
+
+#sidenav.menu-close{
+    width: 70px;
+}
+
+#sidenav.menu-open{
+    width : 240px;
+}
+
+#sidenavContainer{
+    margin-top: 10px;
+}
+
+// #sidenav .mat-nav-list{
+//     margin-top: 36px;
+// }
+
+// #sidenav .menu-item{
+//     width: 100%;
+//     border-radius: 0;
+//     text-align: left;
+//     padding: 10px;
+// }
+
+// #sidenav .menu-item:hover{
+//     background: #eee;
+// }
+
+// #sidenav .menu-item mat-icon{
+//     margin-right: 20px;
+//     margin-left: 12px;
+// }
+
+// .dash-list h3{
+//     padding: 12px;
+// }
+

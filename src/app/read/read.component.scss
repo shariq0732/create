@@ -1,0 +1,20 @@
+
+
+.edit{
+    //margin-left: 5px;
+    margin-top: 2px;
+    height: 50%;
+    width: 22px;
+    cursor: pointer;
+}
+
+button{
+    border: none;
+    background: none;
+    width: 30%;
+}
+
+button:active, button:focus{
+    border: none;
+    outline: none !important;
+}

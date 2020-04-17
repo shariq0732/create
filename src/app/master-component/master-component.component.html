@@ -1,0 +1,50 @@
+<div style='display: inline ;'>
+
+  <div [ngStyle]="style1">
+
+    <ag-grid-angular
+      #agGrid
+      style="width: 95%; height: calc(100% - 25px);"
+      id="myGrid"
+      class="ag-theme-alpine"
+      [editType]="editType"
+      [gridOptions]="gridOptions"
+      [columnDefs]="columnDefs"
+      [rowData]="rowData"
+      [deltaRowDataMode]="true"
+      [getRowNodeId]="getRowNodeId"
+      [frameworkComponents]="frameworkComponents"
+      [defaultColDef]="defaultColDef"
+      [rowSelection]="rowSelection"
+      [animateRows]="true"
+      (gridReady)="onGridReady($event)"
+    ></ag-grid-angular>
+  
+  </div>
+
+
+  <div [ngStyle]="style2" *ngIf = "myVar" >
+
+    <ag-grid-angular
+      #agGrid
+      style="width: 95%; height: calc(100% - 25px);"
+      id="myGrid"
+      class="ag-theme-alpine"
+      [editType]="editType1"
+      [gridOptions]="gridOptions1"
+      [columnDefs]="columnDefs1"
+      [rowData]="rowData1"
+      [deltaRowDataMode]="true"
+      [getRowNodeId]="getRowNodeId1"
+      [frameworkComponents]="frameworkComponents1"
+      [defaultColDef]="defaultColDef1"
+      [rowSelection]="rowSelection1"
+      [animateRows]="true"
+      (gridReady)="onGridReady1($event)"
+    ></ag-grid-angular>
+  
+  </div>
+  
+
+</div>
+

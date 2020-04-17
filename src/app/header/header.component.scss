@@ -1,0 +1,29 @@
+
+ .header{
+   overflow: hidden;
+   margin-top: 0px;
+   margin-bottom:10px;
+   background-color: white;
+ }
+
+  .logo {
+    margin-left: 60px;
+    margin-top: 3px;
+    padding: 2px;
+    width: 160px;
+  }
+
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+.center-fit {
+    max-width: 100%;
+    margin: auto;
+}
+  
+.define{
+    display: inline-block;
+    margin-left: 550px;
+}
+  

@@ -1,0 +1,17 @@
+<!-- <p  [innerHTML] = "informationDisplay"></p> -->
+<div class  = "color">
+    <div class = "edit1">
+        <div class="header">
+            <h2>{{topicName}}</h2>
+            <h6>Created by {{createdBy}}</h6>
+        </div>
+        <div class = "edit">
+            <div class="ql-container ql-snow" style="border-width: 0px;">
+                
+                <div class="ql-editor" [innerHTML]="informationDisplay | safeHtml">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,29 @@
+
+<mat-sidenav mode = "over" [(opened)] = "opened">
+    <mat-icon (click)="opened = false;" class = "left">close</mat-icon>
+    <div class = "base">
+        <li>Home</li>
+        <li (click) = "newEntry()">New Entry</li>
+    </div>
+</mat-sidenav>
+<hr>
+<mat-sidenav-container>
+    <mat-sidenav-content>
+        <div class = "fixeds">
+            <mat-icon id = "colors" (click) = "opened = !opened" >menu</mat-icon>
+        </div>
+
+       
+        <div class="wrapper">
+            <input type="text" class="input" 
+            placeholder="Search...">
+            <div class="searchbtn"><i class="fas fa-search"></i></div>
+            <div class="searchbtn"><i class="fas fa-table" (click) = "onClick($event)"></i></div>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+
+ 

@@ -1,0 +1,26 @@
+/* 
+.center {
+
+  display: block;
+  max-width:230px;
+  max-height:95px;
+  width: auto;
+  height: auto;
+  line-height: 60px;
+  background-repeat:no-repeat ;
+  background-size: auto;   
+}
+
+/* .footer{
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    line-height: 60px;
+    background-repeat: no-repeat;
+    width: 95%;
+    border-top: 1px solid;
+    margin-left: 50px;
+}  */ 
+
+
+ 

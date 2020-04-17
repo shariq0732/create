@@ -1,0 +1,48 @@
+
+  <div class="imgbox">
+    <img class="center-fit" src='assets/img/headerbosch.PNG'>
+  </div>
+  <mat-sidenav-container  id="sidenavContainer" fullscreen>
+    <mat-sidenav mode="side" #sidenav id="sidenav" [class.menu-open]="isMenuOpen" [class.menu-close]="!isMenuOpen" opened>
+      <div class = "fixed" *ngIf = "myVar" (click) = "onToolbarMenuToggle1()">
+        <mat-icon class = "colors">menu</mat-icon>
+      </div>
+      <div class = "fixeds"  (click) = "onToolbarMenuToggle()"  *ngIf = "myVar1">
+        <mat-icon class = "colors">menu_open</mat-icon>
+      </div>
+
+      <mat-nav-list [ngStyle]="style2">
+        <mat-list-item>
+          <mat-icon mat-list-icon>home</mat-icon>
+          <h4 mat-line *ngIf="isExpanded">Home</h4>
+        </mat-list-item>
+        <mat-list-item>
+          <mat-icon mat-list-icon>add</mat-icon>
+          <h4 mat-line *ngIf="isExpanded">New Entry</h4>
+        </mat-list-item>
+        <mat-list-item>
+          <mat-icon mat-list-icon>domain</mat-icon>
+          <h4 mat-line *ngIf="isExpanded">View Own Work</h4>
+        </mat-list-item>
+        <mat-list-item>
+          <mat-icon mat-list-icon>folder_shared</mat-icon>
+          <h4 mat-line *ngIf="isExpanded">Management X</h4>
+        </mat-list-item>
+      </mat-nav-list>
+
+    </mat-sidenav>
+  
+    <mat-sidenav-content [ngStyle]="{ 'margin-left.px': contentMargin }" >
+      <div class = "fixed-header">
+        <img class="logo" src="assets/img/Bosch_EN_LV_RGB.png">
+        <div class = "define"><h4 class = "h4color">One Step</h4></div>
+      </div>
+      <!-- <mat-selection-list class="dash-list">
+        <h3>TO DO</h3>
+        <mat-list-option *ngFor="let todo of task">
+          {{todo}}
+        </mat-list-option>
+      </mat-selection-list>  -->
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  <router-outlet></router-outlet>

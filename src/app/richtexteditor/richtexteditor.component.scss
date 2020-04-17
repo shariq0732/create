@@ -1,0 +1,23 @@
+
+// 
+
+mat-icon{
+    cursor: pointer;
+}
+button{
+    float: right;
+}
+
+::ng-deep .mat-card-header{
+
+   // border: 55px !important;
+    border-radius: 0px !important;
+   
+}
+.toolbar{
+    border-radius: 0px !important;
+}
+
+.ql-editor {
+    white-space: normal!important;
+}
